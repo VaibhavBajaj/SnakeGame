@@ -1,1 +1,4 @@
 # SnakeGame
+This is a decent implementation of the famous snake game in which the user controls the snake and tries to collect as much food as he can to get points. The user loses if he hits the wall boundary or his own snake segment.
+So, lets cut to the chase. What algorithm did I use to program it?
+Well, my algorithm is pretty easy to understand if you visualise it properly. When the snake is spawned, it's cells are numbered from 1 to n in a 2-d array where n is it's length. As the head moves to a new position which is decided by its direction controlled by user arrow key press, the cell the head reaches gets the value n+1. Now the cell previously behind the user with current cell number n-1 moves to cell n and this continues throughout the chain moving the snake one cell forward. The head then moves 1 more step and the cell it moves to is given value n+2 and the proces continues.
